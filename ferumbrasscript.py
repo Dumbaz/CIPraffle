@@ -18,6 +18,8 @@ def openwebsite(questionpage, accountName, password):
 	
 	#Wait a sec
 	assert 'Tibia' in driver.title
+	# Safety sleep
+	time.sleep(2)
 	
 	# Click the login link
 	elem = driver.find_element_by_link_text('Log in')
